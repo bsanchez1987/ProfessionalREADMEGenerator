@@ -1,5 +1,10 @@
 
+const inquirer = require("inquirer");
+const generateRead = require("./utils/generateRead")
+const fs = require("fs");
+const util = require("util");
 
+const writeFileAsync = util.promisify(fs.writeFile)
 
 //create function to ask questions
 function askQuestions() {
@@ -129,3 +134,38 @@ function askQuestions() {
 
     ]);
 }
+
+// console.log(answers)
+askQuestions()
+    .then(async function (answers) {
+
+        console.log(answers)
+
+        if (answers.packages === true) {
+            await inquirer.prompt([{
+
+                type: "input",
+                name: "installation",
+                message: "What packages did you use?"
+
+            }]).then(results => {
+                const answersObj = { ...answers, ...results }
+                const readme = generateRead(answersObj)
+                return writeFileAsync("README.md", readme)
+            })
+        }
+        else {
+            answers.installation = ""
+            const readme = generateRead(answers)
+            return writeFileAsync("README.md", readme)
+        }
+
+    })
+    .then(function () {
+        console.log("Successfully wrote to README.md");
+    })
+    .catch(function (err) {
+        console.log(err);
+    });;
+
+return generateRead;

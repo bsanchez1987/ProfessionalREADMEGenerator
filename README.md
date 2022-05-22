@@ -1,32 +1,36 @@
-# Welcome to Project 1 by Brandon Sanchez
+# Welcome to The ReadMe Generator
 
+[![JavScript](https://img.shields.io/badge/Made%20With-JavaScript-blue.svg)](https://shields.io/)  
   
 ## Description
   
-asdfasdfa
+The application develops a READMe in order to use for your project
+
 ## User Story
-As a , I want to , so that 
+
+As a full stack developer a good READMe helps you to give an overview on what your project and what it is included in it.
+
   
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributors](#contributing)
-* [Tests](#tests)
+* [Demo](#demo)
 * [Questions](#questions)
+
   
 ## Installation
+
 To use this application, run the following commands in your terminal to install the appropriate packages
-* 
+
+    npm i inquirer
+
 ## Usage 
-After you've installed the packages, 
+
+After you've installed the packages, The user opens up their terminal and runs the command
+   
+    node index.js
+
+
 ## License
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)  [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/) [![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0) 
-## Contributing
-This project has no other contributors.
-## Tests
-No Tests
-## Questions
-  
-If you see any improvements that can be made, please email me at bsanchez26@live.com. You can also visit my GitHub page at https://github.com/bsanchez1987 or visit the Project 1 page at sagsdgasdg
-  
+[![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0) 
